@@ -1,0 +1,21 @@
+.courseContainer{
+    width: 350px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.courseContainer:hover{
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.courseTitle{
+    color: beige;
+}

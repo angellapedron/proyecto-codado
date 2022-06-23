@@ -1,0 +1,13 @@
+.titleModal{
+    color: #000;
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+.textModal{
+    font-family: 'Inter';
+    font-size: 15px;
+    color: black;
+    line-height: 20px;
+    padding: 0px 20px 20px;
+}

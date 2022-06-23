@@ -1,0 +1,11 @@
+.divCourses {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 442px);
+    gap:80px; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    /* margin-top: 130px; */
+    margin-bottom: 75px;
+}
