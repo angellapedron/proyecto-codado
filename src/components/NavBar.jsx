@@ -7,17 +7,18 @@ export default function NavBar() {
   return (
     <nav className={styles.navBar}>
       <div className={styles.divLogoCodado}>
-        <Link to='/'><img className={styles.logoCodado} src={logo} alt="logo"/></Link>
+        <Link to='/' reloadDocument><img className={styles.logoCodado} src={logo} alt="logo"/></Link>
       </div>
-      <div>
-        <ul className={styles.links}>
-            <Link to="/cursos" className={styles.linkNavbar} ><li>Cursos</li></Link>
-            <Link to='/' className={styles.linkNavbar} ><li>Enlace 2</li></Link>
-            <Link to='/cursos' className={styles.linkNavbar} ><li>Enlace 3</li></Link>
-            <Link to='/cursos' className={styles.linkNavbar} ><li>Enlace 4</li></Link>
-            <Link to='/' className={styles.linkNavbar} ><li>Enlace 5</li></Link>
+      <div className={styles.elements}>
+        <ul className={styles.links} >
+            <Link to={"/"} className={styles.linkNavbar} reloadDocument><li>Servicios</li></Link>
+            <Link to={'/cursos'} className={styles.linkNavbar} reloadDocument><li>Cursos</li></Link>
+            <Link to='/' className={styles.linkNavbar} reloadDocument><li>Contacto</li></Link>
+            <Link to='/' className={styles.linkNavbar} reloadDocument><li>Enlace 4</li></Link>
+            <span className={styles.line}></span>
         </ul>
+            <Link to='/' className={styles.linkForm} ><li>FORMULARIO</li></Link>
       </div>
-    </nav>
+    </nav> 
   )
 }

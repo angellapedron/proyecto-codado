@@ -12,7 +12,7 @@ export default function App() {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/cursos" element={<CoursePage/>}/>
+        <Route path="cursos" element={<CoursePage/>}/>
       </Routes>
       <Footer/>
       <Copyright text={"@2022 Instituto Codado - Todos los derechos reservados "}/>

@@ -11,7 +11,7 @@ export default function MainSlider({ image, title, text, width, height }) {
             </h1>
             <p>{text}</p>
           </div>
-        </div>
+        </div> 
     </div>
   )
 }
