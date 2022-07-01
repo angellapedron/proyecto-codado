@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import MainSlider from './MainSlider';
-import image from '../images/empezar-estudiar-en-linea-en-casa-1280x720.jpg'
+import image from '../images/cursos.jpg'
 import Courses from './Courses';
 import styles from './CoursePage.module.css';
 import image2 from '../images/hero.jpg';
@@ -46,7 +46,7 @@ export default function CoursePage() {
         </Portal>
 
         <ImageBanner image={image2} direction={"left"}>
-            <InformativeFlayer  title={"FORMULARIO"} button={"Botón"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"} marginLeft={"120px"}/>
+            <InformativeFlayer  title={"FORMULARIO"} button={"Ir al formulario"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"} marginLeft={"120px"} link={"formulario"}/>
         </ImageBanner>
     </>
   )

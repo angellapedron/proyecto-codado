@@ -14,10 +14,10 @@ export default function NavBar() {
             <Link to={"/"} className={styles.linkNavbar} reloadDocument><li>Servicios</li></Link>
             <Link to={'/cursos'} className={styles.linkNavbar} reloadDocument><li>Cursos</li></Link>
             <Link to='/' className={styles.linkNavbar} reloadDocument><li>Contacto</li></Link>
-            <Link to='/' className={styles.linkNavbar} reloadDocument><li>Enlace 4</li></Link>
+            <Link to='/' className={styles.linkNavbar} reloadDocument><li>Requerimientos</li></Link>
             <span className={styles.line}></span>
         </ul>
-            <Link to='/' className={styles.linkForm} ><li>FORMULARIO</li></Link>
+            <Link to='/formulario' className={styles.linkForm} ><li>FORMULARIO</li></Link>
       </div>
     </nav> 
   )

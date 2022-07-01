@@ -13,7 +13,7 @@ function Card(props) {
               <li className='card-text'>{props.text1}</li>
               <li className='card-text'>{props.text2}</li>
               <li className='card-text'>{props.text3}</li>
-              <li className='card-text'>{props.text4}</li>
+              <li className='card-text'>{props.text4}</li> 
               <li className='card-title'>{props.modulo}</li>
               <li className='card-text'>{props.modulo1}</li>
               <li className='card-text'>{props.modulo2}</li>

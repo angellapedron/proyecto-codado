@@ -1,7 +1,11 @@
 import React from 'react';
 import MainSlider from './MainSlider';
-import image from '../images/empezar-estudiar-en-linea-en-casa-1280x720.jpg'
+import image from '../images/foto_portada.jpg'
 import image2 from '../images/hero.jpg'
+import image3 from '../images/circulo_1.jpg'
+import image4 from '../images/circulo_2.jpg'
+import image5 from '../images/circulo_3.jpg'
+import image6 from '../images/circulo_4.jpg'
 import Section from './Section';
 import styles from './Home.module.css'
 import Information from './Information';
@@ -21,31 +25,31 @@ export default function Home() {
         <div className={styles.sections}>
             <Section 
             title={"PARTICIPANTES"} 
-            image={image} 
+            image={image3} 
             direction={"right"}
             titleHover={"Lorem Ipsum 1"}
             text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
             <Section 
             title={"FACILITADORES"} 
-            image={image}
+            image={image4}
             direction={"right"}
             titleHover={"Lorem Ipsum 2"}
             text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
             <Section 
             title={"EL PROCESO"} 
-            image={image}
+            image={image5}
             direction={"left"}
             titleHover={"Lorem Ipsum 3"}
             text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
             <Section 
             title={"COMUNIDADES"} 
-            image={image}
+            image={image6}
             direction={"left"}
             titleHover={"Lorem Ipsum 4"}
             text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
         </div>
         <ImageBanner image={image2} direction={"flex-end"}>
-            <InformativeFlayer title={"CURSOS"} button={"Botón"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"} marginRight={"120px"}/>
+            <InformativeFlayer title={"CURSOS"} button={"Ver cursos"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"} marginRight={"120px"} link={"cursos"}/>
         </ImageBanner>
         <div className={styles.importantInfo}>
             <Information title={'MISIÓN'} text={'Permanecer en el tiempo como la solución de nuestros clientes en el desarrollo y fortalecimiento de su recurso humano, a través de la alta calidad de nuestros programas; garantizando un sistema de trabajo que provea conocimiento y bienestar profesional.'}/>
