@@ -1,23 +1,29 @@
-import React , {useState, useEffect} from 'react'
+import React from 'react'
 import {useForm} from 'react-hook-form';
 // import Navbar from '../Navbar'; 
 import '../Formulario.css';
+import axios from 'axios'; //npm i axios
+import swal from 'sweetalert2'; //npm i sweetalert2
 
 const Formulario = () => {
   const {register, handleSubmit, formState:{ errors }} = useForm()
 
-  const customSubmit = (data) => {
-    console.log(data)
+  const customSubmit = data => {
 
-  }
+    axios.post('http://localhost:8080/api/save', data) //Cambiar url si es necesario 
 
-  const [cursos, setCursos] = useState([])
+    console.log(data);
 
-  useEffect(() =>{
-    const data = require('../CursosData.json')
-    console.log(data)
-    setCursos(data)
-  },[])
+    swal.fire({
+      title: "CONFIRMADO",
+      text: "Su informacion ha sido registrada exitosamente",
+      icon: "success",
+      confirmButtonText: "Aceptar",
+    });
+    
+    reset();
+  };
+  console.log(errors);
 
   return (
 
@@ -53,13 +59,10 @@ const Formulario = () => {
         <label>Curso:</label>
         <select className='controls' {...register('cursos', {required:true})}>
           <option value=''>--Elegir Curso--</option>
-          {cursos.map((item) =>{
-            return(
-              <option key={item.cursos}>
-                {item.cursos}
-              </option>
-            )
-          })}
+          <option value='Asistente Financiero'>Asistente Financiero</option>
+          <option value='Asistente Contable'>Asistente Contable</option>
+          <option value='Asistente de Informatica'>Asistente de Informatica</option>
+          <option value='Asistente Administrativo'>Asistente Administrativo</option>
         </select>
         {errors.cursos?.type === 'required' && <small className='fail'>El campo no puede estar vacio</small> }
       </div>
